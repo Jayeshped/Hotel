@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(front_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.main_info {
+    width: 50%;
+    height: 40vh;
+    border: #fff 2px solid;
+    padding: 20px 20px;
+    margin-left: 23%;
+    margin-top: 20px;
+}
+
+.main_info p {
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.main_info i {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.menubutton {
+    background: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+#click {
+    display: none;
+}
+
+.mapbutton {
+    color: #fff;
+    font-size: 25px;
+    border: #fff 2px solid;
+    margin-top: 10px;
+}
+
+.social_button img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.footer {
+    background: #000000;
+    height: 180px;
+    padding: 40px 240px;
+    display: flex;
+}
+
+.footer_menu ul a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 10px;
+}
+
+.address {
+    color: #fff;
+    margin-left: 220px;
+}
+
+.address p {
+    margin-top: 7px;
+}
+
+.social {
+    color: #fff;
+    margin-left: 220px;
+}
+
+.social_button img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.name {
+    color: #fff;
+    margin-top: -30px;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+
+    .menubutton {
+        display: block;
+    }
+
+    .navbar ul {
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 40px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    .navbar ul li:hover::after {
+        background: #009688;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+        transition: all 0.5s;
+    }
+
+    .main_info {
+        width: 60%;
+        height: 50vh;
+        border: #fff 2px solid;
+        padding: 20px 20px;
+        margin-left: 18%;
+        margin-top: 20px;
+    }
+
+    .footer {
+        background: #000000;
+        height: 500px;
+        width: 100%;
+        padding: 40px 0px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer_menu ul {
+        margin-left: 200px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .footer_menu ul a {
+        margin-top: 14px;
+    }
+
+    .address {
+        color: #fff;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .social {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+}
