@@ -20,6 +20,6 @@ from Hotel import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.homePage),
+    path('',views.aboutUs),
     path('aboutUs/',views.aboutUs),
 ]
