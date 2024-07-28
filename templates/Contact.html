@@ -2,7 +2,7 @@
 
 <head>
     <title>Restaurant site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/contact_style.css/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,18 +21,21 @@
 
             </label>
             <ul>
-                <li><a href="/templates/Index.html">Home</a></li>
-                <li><a href="/templates/Menu.html">food Menu</a></li>
-                <li><a href="/templates/About.html">About</a></li>
-                <li><a href="/templates/Contact.html">Contact</a></li>
+                <li><a href="/aboutIndex">Home</a></li>
+                <li><a href="/aboutMenu">Food Menu</a></li>
+                <li><a href="/aboutUs">About</a></li>
+                <li><a href="/aboutContact">Contact</a></li>
             </ul>
         </div>
         <div class="content">
             <h1>welcome to our<br>kitchen's</h1>
             <div>
-                <button class="button type"><a href="menu.html">MENU</a></button>
+                <button class="button type"><a href="/templates/Menu.html">MENU</a></button>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        {% include "footer.html"%}
     </div>
 </body>
 

@@ -1,0 +1,29 @@
+.footer {
+    background: #000000;
+    height: 500px;
+    width: 100%;
+    padding: 40px 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer_menu ul {
+    margin-left: 200px;
+    text-align: center;
+    list-style: none;
+}
+
+.footer_menu ul a {
+    margin-top: 14px;
+}
+
+.address {
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.social {
+    margin-top: 50px;
+    margin-left: 0px;
+}

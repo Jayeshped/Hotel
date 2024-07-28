@@ -2,7 +2,7 @@
 
 <head>
     <title>Restaurant site</title>
-    <link rel="stylesheet" href="menu_style.css">
+    <link rel="stylesheet" href="/static/css/menu_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,25 +21,25 @@
 
             </label>
             <ul>
-                <li><a href="/templates/Index.html/">Home</a></li>
-                <li><a href="/templates/Menu.html/">food Menu</a></li>
-                <li><a href="/templates/About.html/">About</a></li>
-                <li><a href="/templates/Contact.html/">Contact</a></li>
+                <li><a href="/aboutIndex">Home</a></li>
+                <li><a href="/aboutMenu">Food Menu</a></li>
+                <li><a href="/aboutUs">About</a></li>
+                <li><a href="/aboutContact">Contact</a></li>
             </ul>
         </div>
         <div class="menu_img">
-            <img src="hotel image/menu image/1.png">
-            <img src="hotel image/menu image/2.png">
-            <img src="hotel image/menu image/3.png">
-            <img src="hotel image/menu image/4.png">
-            <img src="hotel image/menu image/5.png">
-            <img src="hotel image/menu image/6.png">
-            <img src="hotel image/menu image/7.png">
-            <img src="hotel image/menu image/8.png">
-            <img src="hotel image/menu image/9.png">
-            <img src="hotel image/menu image/10.png">
-            <img src="hotel image/menu image/11.png">
-            <img src="hotel image/menu image/12.png">
+            <img src="/static/img/media/menu/1.png">
+            <img src="/static/img/media/menu/2.png">
+            <img src="/static/img/media/menu/3.png">
+            <img src="/static/img/media/menu/4.png">
+            <img src="/static/img/media/menu/5.png">
+            <img src="/static/img/media/menu/6.png">
+            <img src="/static/img/media/menu/7.png">
+            <img src="/static/img/media/menu/8.png">
+            <img src="/static/img/media/menu/9.png">
+            <img src="/static/img/media/menu/10.png">
+            <img src="/static/img/media/menu/11.png">
+            <img src="/static/img/media/menu/12.png">
         </div>
     </div>
     <div class="banner2">
@@ -66,37 +66,14 @@
     <div class="banner9">
 
     </div>
-    <footer class="footer">
-        <div class="footer_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">food Menu</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="address">
-            <p><b>Address:</b> <br>3rd & 4th Floor, Om Sai Commercial Files,<br> Opp. State Bank, NH66 Main Chowk,<br>
-                Kankavli,
-                Maharashtra 416602</p>
-            <p><b>Contact Number: +91 85509 07020</b></p>
-        </div>
-        <div class="social">
-            <h3>Social Media</h3>
-            <label class="social_button">
-                <br>
-                <a href="https://www.instagram.com/theupperdeckresto/">
-                    <img src="hotel image/social media logo/instagram.png">
-                </a>
-                <a href="https://www.facebook.com/theupperdeckresto">
-                    <img src="hotel image/social media logo/facebook.png">
-            </label>
-        </div>
-
-    </footer>
+    <div class="footer">
+        {% include "footer.html"%}
+    </div>
     <div class="name">
         <p>website designed by Jayesh</p>
     </div>
+    
+    
 </body>
 
 </html>
